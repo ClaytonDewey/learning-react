@@ -1,5 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+
+const Greeting = () => {
+  return(
+    <h2>Hello Unamed Stooge ! ! !</h2>
+  );
+};
 
 const App = () => {
   return (
@@ -10,6 +15,7 @@ const App = () => {
       <h1>
         Hello Larry ! ! !
       </h1>
+      <Greeting />
     </>
   );
   /* <></> === JS fragment */
