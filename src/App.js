@@ -7,9 +7,18 @@ const App = () => {
       <h1>
         Hello React ! ! !
       </h1>
-      <Greeting name='Larry'  />
-      <Greeting name='Curly' />
-      <Greeting name='Moe' />
+      <Greeting
+        name="Larry"
+        favoriteNumber={1}
+      />
+      <Greeting
+        name='Curly'
+        favoriteNumber={42} 
+      />
+      <Greeting
+        name='Moe'
+        favoriteNumber={3} 
+      />
     </>
   );
   /* <></> === JS fragment */
