@@ -1,10 +1,5 @@
 import './App.css';
-
-const Greeting = () => {
-  return(
-    <h2>Hello Unamed Stooge ! ! !</h2>
-  );
-};
+import Greeting from './Greeting';
 
 const App = () => {
   return (
@@ -15,6 +10,9 @@ const App = () => {
       <h1>
         Hello Larry ! ! !
       </h1>
+      <Greeting />
+      <Greeting />
+      <Greeting />
       <Greeting />
     </>
   );
