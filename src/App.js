@@ -2,9 +2,20 @@ import './App.css';
 import Greeting from './Greeting';
 
 const App = () => {
+
+  const styles = {
+    container: {
+      padding: 30
+      , backgroundColor: new Date().getSeconds() % 2 === 0 ? 'steelblue' : 'pink'
+    }
+    , heading: {
+      textTransform: 'uppercase'
+    }
+  }
+
   return (
-    <>
-      <h1>
+    <div style={styles.container}>
+      <h1 style={styles.heading}>
         Hello React ! ! !
       </h1>
       <Greeting
@@ -13,14 +24,14 @@ const App = () => {
       />
       <Greeting
         name='Curly'
-        favoriteNumber={42} 
+        favoriteNumber={42}
         favoriteColors={["Red", "Green", "Blue"]}
       />
       <Greeting
         name='Moe'
-        favoriteNumber={3} 
+        favoriteNumber={3}
       />
-    </>
+    </div>
   );
   /* <></> === JS fragment */
 };
